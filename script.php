@@ -52,30 +52,19 @@ if ($Vald == 0) {
 					$array[$i][$j] = $array[$i][$j];
 				}
 			}
+		}	
+	}
+	for ($i = 0; $i < count($inputData); $i++) {
+		for ($j = 0; $j < count($inputData); $j++) {
+			if ($array[$i][$j][0] == "i") {
+				print_r("0 ");
+			}
+			else {
+				print_r("1 ");
+			}
 		}
+		print_r("<br>");
 	}
-
-	$a = (int)($_GET['a'][0]);
-	$b = (int)($_GET['b'][0]);
-
-	if ($a > $size || $b > $size) {
-		print_r("У вас всего " . $size . " точек, куда так много?");
-	}
-	else if ($a <= 0 || $b <= 0) {
-		print_r("У нас элементы считаются с первого!");
-	}
-	else {
-
-		if ($array[$a - 1][$b - 1][0] != "i") {
-			print_r("Дорога проходит через " . $array[$a - 1][$b - 1][1] . ", а расстояние равно " . $array[$a - 1][$b - 1][0]);
-			
-		}
-		else {
-			print_r("Нет дороги");
-			
-		}
-	}
-
 }
 else if ($Vald == 1){
 	print_r("В матрице могут быть только числа либо буква \"i\"!");
