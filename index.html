@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Лабораторная работа № 4</title>
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+	<script type="text/javascript" src="script/script.js?v11"></script>
+	<script type="text/javascript" src="script/jquery-3.6.0.js"></script>
+
+	<form onsubmit="check(); return false;">
+		<h2> Поиск кратчайшего пути в графе.</h2>
+		<p>Введите в поле матрицу расстояний.<br><b>Если связи между вершинами не существует, то заполнять символом "i".</b></p>
+        <p>Пример:<br>
+            i i 8 i<br>
+            -4 i i i<br>
+            i 6 i 3<br>
+            12 i i i<br></p>
+		<textarea name="comment" cols="40" rows="7" placeholder="Введите сюда матрицу" id="input-field"></textarea><br><br>
+		Начало <input type="text" id="a-input"><br><br>
+		Конец <input type="text" id="b-input"><br><br>
+		<input type="submit" name="submit-btn" value="Выполнить">
+	</form><br>
+	<p><b><span id="result"></span></b></p>
+</body>
+</html>
