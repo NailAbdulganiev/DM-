@@ -53,19 +53,6 @@ if ($Vald == 0) {
 				}
 			}
 		}
-
-		/*print_r("<br>");
-		for ($i = 0; $i < count($inputData); $i++) {
-			for ($j = 0; $j < count($inputData); $j++) {
-				if ($array[$i][$j][0] == "i") {
-					print_r("0 ");
-				}
-				else {
-					print_r("1 ");
-				}
-			}
-			print_r("<br>");
-		}*/
 	}
 
 	$a = (int)($_GET['a'][0]);
